@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachii</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="images/sachii.jpg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white flex items-center justify-center min-h-screen p-4 overflow-hidden">
+
+    <div id="blur-overlay" class="fixed inset-0 bg-black/20 backdrop-blur-lg flex items-center justify-center z-50 cursor-pointer transition-opacity duration-500">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-white">Click to reveal.</h2>
+        </div>
+    </div>
+
+    <div class="w-full max-w-md mx-auto">
+        <div class="bg-black/20 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-6 md:p-8 text-center">
+            
+            <div class="mb-6">
+                <img 
+                    src="images/sachii.jpg" 
+                    alt="Sachii's Profile Picture" 
+                    class="w-32 h-32 rounded-full mx-auto ring-4 ring-blue-500/50 object-cover shadow-lg"
+                    onerror="this.onerror=null; this.src='https://placehold.co/128x128/1e293b/ffffff?text=Sachii';"
+                >
+            </div>
+
+            <h1 class="text-3xl font-bold text-white">Sachii</h1>
+            <p class="text-gray-300 mt-2">16-year-old Turkish developer.</p>
+
+            <div class="mt-8">
+                <h2 class="text-lg font-semibold text-gray-200 mb-4">Languages & Skills</h2>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">PHP</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">SQL</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">C#</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">C++</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">C</span>
+                    <span class="bg-white/10 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">x86 Assembly</span>
+                </div>
+            </div>
+
+            <div class="mt-8 flex justify-center items-center space-x-4 relative">
+                <a href="https://www.github.com/sachiiistired" target="_blank" rel="noopener noreferrer" class="group w-10 h-10 flex justify-center items-center text-gray-300 hover:text-white transition-colors duration-300 focus:outline-none" aria-label="GitHub Profile">
+                    <svg class="w-8 h-8 transition-transform duration-300 group-hover:-translate-y-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.562 21.81 24 17.302 24 12 24 5.373 18.627 0 12 0z"/></svg>
+                </a>
+
+                <a href="https://www.roblox.com/users/9109125484/profile" target="_blank" rel="noopener noreferrer" class="group w-10 h-10 flex justify-center items-center text-gray-300 hover:text-white transition-colors duration-300 focus:outline-none" aria-label="Roblox Profile">
+                    <svg class="w-9 h-9 transition-transform duration-300 group-hover:-translate-y-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="397 377 375 367" xml:space="preserve">
+                        <g transform="matrix(1.3333333,0,0,-1.3333333,0,405.02)">
+                            <g transform="translate(389.0068,129.7562)">
+                                <path fill="currentColor" d="M62.4-268.5l-35.2,9.1l9.1,35.2l35.2-9.1L62.4-268.5z M-17.6-133L-64-313.3l180.4-46.4 l46.4,180.4L-17.6-133z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+
+                <div class="relative w-10 h-10 flex justify-center items-center">
+                    <button id="discord-button" class="group w-full h-full flex justify-center items-center text-gray-300 hover:text-white transition-colors duration-300 focus:outline-none" aria-label="Copy Discord Username">
+                        <svg class="w-8 h-8 transition-transform duration-300 group-hover:-translate-y-1" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                            <g>
+                                <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="currentColor" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                        <span id="copy-notification" class="absolute -top-8 left-1/2 -translate-x-1/2 text-xs bg-green-500 text-white px-2 py-1 rounded-md opacity-0 pointer-events-none">Copied!</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 w-full max-w-md mx-auto bg-black/20 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-4 text-center">
+            <div class="flex items-center space-x-4">
+                <img id="song-artwork" src="images/song.png" alt="Song Artwork" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/64x64/1e293b/ffffff?text=Song';">
+                
+                <div class="flex-1 text-left overflow-hidden">
+                    <h3 class="font-semibold text-white truncate">Compass</h3>
+                    <p class="text-sm text-gray-400 truncate">Mili</p>
+                    <div class="mt-2">
+                        <input type="range" id="progress-bar" value="0" class="w-full">
+                        <div class="flex justify-between text-xs text-gray-400 mt-1">
+                            <span id="current-time">0:00</span>
+                            <span id="total-duration">0:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                    <button id="play-pause-btn" class="text-white flex-shrink-0">
+                        <svg id="play-icon" class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        <svg id="pause-icon" class="w-8 h-8 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1zm4 0a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <div id="volume-icon-container" class="w-6 h-6 flex items-center justify-center">
+                            <svg id="volume-high" class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.158a1 1 0 00-1.447-.894L4.086 3H2a1 1 0 00-1 1v10a1 1 0 001 1h2.086l4.467 2.736A1 1 0 0010 17.842V2.158zM12 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1zm3 2a1 1 0 011 1v4a1 1 0 11-2 0V8a1 1 0 011-1z"></path></svg>
+                            <svg id="volume-low" class="w-5 h-5 text-gray-300 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.158a1 1 0 00-1.447-.894L4.086 3H2a1 1 0 00-1 1v10a1 1 0 001 1h2.086l4.467 2.736A1 1 0 0010 17.842V2.158zM12 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1zm3 2a1 1 0 011 1v4a1 1 0 11-2 0V8a1 1 0 011-1z"></path></svg>
+                            <svg id="volume-muted" class="w-5 h-5 text-gray-300 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 1.158a1 1 0 00-1.447-.894L4.086 3H2a1 1 0 00-1 1v10a1 1 0 001 1h2.086l4.467 2.736A1 1 0 0010 17.842V2.158zm4.95 6.343a1 1 0 111.414 1.414L14.414 10l1.95 1.95a1 1 0 11-1.414 1.414L13 11.414l-1.95 1.95a1 1 0 11-1.414-1.414L11.586 10l-1.95-1.95a1 1 0 111.414-1.414L13 8.586l1.95-1.95z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1" class="w-24">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio id="audio-player" src="songs/song.mp3" preload="metadata"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

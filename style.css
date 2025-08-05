@@ -1,0 +1,88 @@
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url('images/background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#copy-notification {
+    transition: opacity 0.3s ease-in-out;
+}
+
+@property --volume-progress {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.2);
+    height: 4px;
+    border-radius: 10px;
+}
+input[type="range"]::-moz-range-track {
+    background: rgba(255, 255, 255, 0.2);
+    height: 4px;
+    border-radius: 10px;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -4px;
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+#progress-bar::-moz-range-thumb {
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: none;
+    transition: transform 0.2s;
+}
+
+#progress-bar:hover::-webkit-slider-thumb {
+    transform: scale(1.2);
+}
+#progress-bar:hover::-moz-range-thumb {
+    transform: scale(1.2);
+}
+
+#volume-bar {
+    background: linear-gradient(to right, white var(--volume-progress, 100%), rgba(255, 255, 255, 0.2) var(--volume-progress, 100%));
+    border-radius: 10px;
+    transition: --volume-progress 0.1s linear;
+    height: 4px;
+}
+#volume-bar::-webkit-slider-runnable-track {
+     background: transparent;
+}
+ #volume-bar::-moz-range-track {
+     background: transparent;
+}
+
+#volume-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+#volume-bar::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    border: 0;
+} 
