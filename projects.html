@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachii - Projects</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="images/sachii.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-2xl mx-auto">
+        <div class="bg-black/20 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-6 md:p-8 text-center">
+            
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-white">Projects</h1>
+                <a href="index.html" class="bg-white/10 hover:bg-white/20 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300">
+                    &larr; Go Back
+                </a>
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <a href="https://github.com/sachiiistired/DAMN/" target="_blank" rel="noopener noreferrer" class="block bg-black/20 border border-white/10 rounded-xl overflow-hidden group">
+                    <img 
+                        src="images/project/DAMN.png" 
+                        alt="DAMN Project Screenshot" 
+                        class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=DAMN';"
+                    >
+                    <div class="p-4 text-left">
+                        <h3 class="text-xl font-bold">DAMN</h3>
+                        <p class="text-gray-300 mt-1">DAMN bird</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="mt-6 w-full max-w-md mx-auto bg-black/20 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-4 text-center">
+            <div class="flex items-center space-x-4">
+                <img id="song-artwork" src="images/song.png" alt="Song Artwork" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/64x64/1e293b/ffffff?text=Song';">
+                
+                <div class="flex-1 text-left overflow-hidden">
+                    <h3 class="font-semibold text-white truncate">Compass</h3>
+                    <p class="text-sm text-gray-400 truncate">Mili</p>
+                    <div class="mt-2">
+                        <input type="range" id="progress-bar" value="0" class="w-full">
+                        <div class="flex justify-between text-xs text-gray-400 mt-1">
+                            <span id="current-time">0:00</span>
+                            <span id="total-duration">0:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                    <button id="play-pause-btn" class="text-white flex-shrink-0">
+                        <svg id="play-icon" class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        <svg id="pause-icon" class="w-8 h-8 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1zm4 0a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <div id="volume-icon-container" class="w-6 h-6 flex items-center justify-center">
+                            <svg id="volume-high" class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.158a1 1 0 00-1.447-.894L4.086 3H2a1 1 0 00-1 1v10a1 1 0 001 1h2.086l4.467 2.736A1 1 0 0010 17.842V2.158zM12 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1zm3 2a1 1 0 011 1v4a1 1 0 11-2 0V8a1 1 0 011-1z"></path></svg>
+                            <svg id="volume-low" class="w-5 h-5 text-gray-300 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.158a1 1 0 00-1.447-.894L4.086 3H2a1 1 0 00-1 1v10a1 1 0 001 1h2.086l4.467 2.736A1 1 0 0010 17.842V2.158zM12 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1zm3 2a1 1 0 011 1v4a1 1 0 11-2 0V8a1 1 0 011-1z"></path></svg>
+                            <svg id="volume-muted" class="w-5 h-5 text-gray-300 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 1.158a1 1 0 00-1.447-.894L4.086 3H2a1 1 0 00-1 1v10a1 1 0 001 1h2.086l4.467 2.736A1 1 0 0010 17.842V2.158zm4.95 6.343a1 1 0 111.414 1.414L14.414 10l1.95 1.95a1 1 0 11-1.414 1.414L13 11.414l-1.95 1.95a1 1 0 11-1.414-1.414L11.586 10l-1.95-1.95a1 1 0 111.414-1.414L13 8.586l1.95-1.95z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1" class="w-24">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio id="audio-player" src="songs/song.mp3" preload="metadata"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
